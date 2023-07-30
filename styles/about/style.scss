@@ -1,0 +1,136 @@
+:root {
+    --background-color: #f0f0f0;
+    --blue: #109eff;
+    --white: #fff;
+    --grey: #00000033;
+}
+
+main {
+    h2 {
+        background-color: var(--grey);
+        display: inline-block;
+        color: var(--white);
+    }
+
+    h3 {
+        color: var(--grey);
+        text-align: center;
+    }
+
+    section {
+        background-color: rgba(245, 245, 220, 0.2);
+        padding: 1rem;
+        margin: 2rem 9%;
+    }
+
+    section.our-goals {
+        background-color: transparent;
+        color: var(--white);
+    }
+
+    .team {
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        > h3 {
+            padding: 3rem;
+        }
+        > h3, span {
+            color: var(--blue);
+            text-transform: capitalize;
+            font-size: 3rem;
+            background-color: var(--background-color);
+        }
+        span {
+            color: var(--blue);
+        }
+        >.row {
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            flex-wrap: wrap;
+
+            background-color: var(--background-color);
+            gap: 1rem;
+            padding:  1rem;
+        }
+        .card {
+            background-color: var(--blue);
+            padding: 1rem;
+
+            flex: 1 1 17rem;
+            max-width: 25rem;
+
+            border-radius: 1rem;
+
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: var(--white);
+                height: 50%;
+                width: 100%;
+                top: 0;
+                // z-index: 1;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 10;
+
+            padding: 1rem;
+
+            align-items: center;
+            gap: 1rem;
+            flex-direction: column;
+
+            color: var(--white);
+
+            h3 {
+                color: var(--white);
+            }
+        }
+        .image {
+            width: 10rem;
+            height: 10rem;
+            background-color: var(--blue);
+            padding: 0.2rem;
+            border-radius: 50%;
+
+            // border-radius: 50%;
+
+            img {
+                border-radius: 50%;
+                // border: solid 0.2rem var(--blue);
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        ul.row {
+            flex-direction: column;
+            list-style-type: none;
+    
+            i {
+                font-size: 1rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+footer {
+    ul.row {
+        flex-direction: column;
+    }
+}
