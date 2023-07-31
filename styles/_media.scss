@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    /*nav*/ .nav-tab {
+        nav {
+            flex-direction: column;
+        }
+        position: absolute;
+        visibility: hidden;
+        top: 100%;
+        border-top: 0.2rem solid #003;
+        flex-direction: column;
+        padding: 2rem ;
+        text-align: center;
+        // align-items: center;
+        left: 0;
+        right: 0;
+        background-color: #f0f0f0;
+        span {
+            visibility: hidden;
+        }
+        &.active {
+            visibility: visible;
+        }
+        // padding: 5% 2rem;
+    }
+
+    
+
+    .search-toggle {
+        flex-direction: column-reverse;
+    }
+
+    main {
+        .hero {
+            flex-direction: column;
+        }
+        .container-one {
+            flex: 1;
+            flex-direction: column;
+            .card {
+                flex: 1;
+            }
+        }
+    }
+
+    
+    
+    header {
+        i#toggle-btn {
+            display: block;
+            visibility:visible;
+        }
+        >a:last-child {
+            // display: none;
+            visibility: hidden;
+            position: absolute;
+            top: 400%;
+            margin: 0 auto;
+            right: 5%;
+            transform: translate(-110%, 300%);
+
+            &.active {
+                visibility: visible;
+            }
+        }
+    }
+}
