@@ -1,0 +1,84 @@
+:root {
+  --background-color: #f0f0f0;
+  --blue: #109eff;
+  --white: #fff;
+  --grey: #00000033;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+article h2 {
+  color: var(--white);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+article h3:first-child {
+  margin: 1rem auto;
+  color: #b9b90c;
+  text-align: center;
+}
+
+article {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.audio, aside {
+  padding: 0.1rem 9%;
+}
+
+.article-audio {
+  background-color: #0f0f0f;
+  padding: 1rem;
+}
+.article-audio p {
+  margin-left: 2rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.article-audio audio {
+  width: 100%;
+  background-color: transparent;
+}
+
+aside {
+  margin: 1rem auto;
+  flex-direction: column;
+  gap: 1rem;
+}
+aside h3 {
+  color: #b9b90c;
+  padding: 1rem;
+  background-color: var(--background-color);
+  align-self: center;
+  border-radius: 0.5rem;
+}
+aside ul {
+  padding: 1rem;
+  list-style-position: inside;
+  list-style-type: none;
+}
+aside a {
+  line-height: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #b9b90c;
+}
+
+footer {
+  color: var(--white);
+}
+footer div, footer ul {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+footer a {
+  color: var(--white);
+}/*# sourceMappingURL=style.css.map */
